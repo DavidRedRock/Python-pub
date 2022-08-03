@@ -44,10 +44,12 @@ def find_longest_subsequence(input):
             else:
                 # reinitialise
                 current_sub = [input[i]]
-    print("Longest length: " + str(max_len) + ", Longest subsequence: " + str(longest_sub))
+    print("   .The Longest length: " + str(max_len) + ", Longest subsequence: " + str(longest_sub))
 
 # Run and print out all the test case outputs.
+print("\n\n### Test Case Results:\n")
+
 for i in range(0, len(test_case_inputs)):
     input = list(map(int,test_case_inputs[i].split(' ')))
-    print("Test case " + str(i+1) + " output")
+    print("## Test case " + str(i+1) + " output:")
     find_longest_subsequence(input)
